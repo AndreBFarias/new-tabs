@@ -12,7 +12,7 @@
 
 ---
 
-Uma releitura sombria da extensao [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estetica arcana inspirada em grimorios magicos, interface em portugues e um ritual de busca visualmente encantador.
+Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estetica arcana inspirada em grimorios magicos, interface em portugues e um ritual de busca visualmente encantador.
 
 ---
 
@@ -34,7 +34,7 @@ Uma releitura sombria da extensao [Dracula New Tab](https://github.com/dracula/n
 | Qwant | Espelho de Qwant |
 | Ecosia | Ecos da Vida |
 
-## Novidades desta versao
+## Novidades desta versão
 
 - Visual reimaginado com tema gotico e referencias a tomos magicos
 - Interface 100% localizada em portugues
@@ -45,7 +45,7 @@ Uma releitura sombria da extensao [Dracula New Tab](https://github.com/dracula/n
 
 ---
 
-## Instalacao Rapida
+## Instalação Rapida
 
 ### Linux / macOS
 ```bash
@@ -61,13 +61,13 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 
 ---
 
-## Instalacao Manual
+## Instalação Manual
 
 ### Chrome / Chromium / Edge / Brave / Vivaldi
 
 | Arquivo | Descricao |
 |---------|-----------|
-| [codex-dracula-chrome-v2.1.zip](releases/chrome/) | Extensao para Chrome (Manifest v3) |
+| [codex-dracula-chrome-v2.1.zip](releases/chrome/) | Extensão para Chrome (Manifest v3) |
 
 1. Baixe e extraia o arquivo `.zip`
 2. Acesse `chrome://extensions/`
@@ -82,7 +82,7 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 | Arquivo | Descricao |
 |---------|-----------|
 | [codex-dracula-firefox-v2-v2.1.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) - Maior compatibilidade |
-| [codex-dracula-firefox-v3-v2.1.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versao moderna |
+| [codex-dracula-firefox-v3-v2.1.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versão moderna |
 
 **Via arquivo .xpi:**
 1. Baixe o arquivo `.xpi`
@@ -91,16 +91,16 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 4. Selecione **Instalar complemento a partir de arquivo**
 5. Escolha o arquivo `.xpi` baixado
 
-**Instalacao temporaria (desenvolvimento):**
+**Instalação temporaria (desenvolvimento):**
 1. Acesse `about:debugging#/runtime/this-firefox`
-2. Clique em **Carregar extensao temporaria**
+2. Clique em **Carregar extensão temporaria**
 3. Selecione o `manifest.json` da pasta desejada
 
 ---
 
 ## Compatibilidade
 
-| Navegador | Versao | Status |
+| Navegador | Versão | Status |
 |-----------|--------|--------|
 | Chrome | 88+ | Manifest v3 |
 | Chromium | 88+ | Manifest v3 |
@@ -122,9 +122,9 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 ```
 new-tabs/
 ├── assets/              # Imagens e recursos
-├── chrome/              # Extensao Chrome (Manifest v3)
-├── firefox/             # Extensao Firefox (Manifest v2)
-├── firefox-v3/          # Extensao Firefox (Manifest v3)
+├── chrome/              # Extensão Chrome (Manifest v3)
+├── firefox/             # Extensão Firefox (Manifest v2)
+├── firefox-v3/          # Extensão Firefox (Manifest v3)
 ├── releases/
 │   ├── chrome/          # .zip para Chrome
 │   ├── firefox/         # .zip e .xpi (v2)
@@ -153,7 +153,7 @@ Para gerar novos releases:
 
 - Projeto original por [@Superredstone](https://github.com/Superredstone)
 - Tema Dracula por [draculatheme.com](https://draculatheme.com)
-- Versao Codex Dracula por [@AndreBFarias](https://github.com/AndreBFarias)
+- Versão Codex Dracula por [@AndreBFarias](https://github.com/AndreBFarias)
 
 ---
 
