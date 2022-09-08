@@ -1,9 +1,9 @@
 <div align="center">
 
 [![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
-[![Licenca](https://img.shields.io/badge/licenca-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
+[![Licença](https://img.shields.io/badge/licença-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/new-tabs.svg?style=social)](https://github.com/AndreBFarias/new-tabs/stargazers)
-[![Contribuicoes](https://img.shields.io/badge/contribuicoes-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/new-tabs/issues)
+[![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/new-tabs/issues)
 
 <h1>Codex Dracula - New Tabs</h1>
 <img src="assets/dracula.svg" width="120" alt="Logo Codex Dracula">
@@ -12,7 +12,7 @@
 
 ---
 
-Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estetica arcana inspirada em grimorios magicos, interface em portugues e um ritual de busca visualmente encantador.
+Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética arcana inspirada em grimórios mágicos, interface em português e um ritual de busca visualmente encantador.
 
 ---
 
@@ -27,20 +27,20 @@ Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/
 | Motor Original | Nome Arcano |
 |----------------|-------------|
 | Google | Olhos de Google |
-| Yahoo | Oraculo do Yahoo |
+| Yahoo | Oráculo do Yahoo |
 | Bing | Sussurros do Bing |
 | DuckDuckGo | Pato das Trevas |
-| Brave Search | Cacador Valente |
+| Brave Search | Caçador Valente |
 | Qwant | Espelho de Qwant |
 | Ecosia | Ecos da Vida |
 
 ## Novidades desta versão
 
-- Visual reimaginado com tema gotico e referencias a tomos magicos
-- Interface 100% localizada em portugues
-- Efeitos sonoros ao buscar (sussurros) - agora com opcao de ativar/desativar
+- Visual reimaginado com tema gótico e referências a tomos mágicos
+- Interface 100% localizada em português
+- Efeitos sonoros ao buscar (sussurros) - agora com opção de ativar/desativar
 - Imagem do Dracula centralizada com responsividade
-- Icones personalizados nos tamanhos 16, 48 e 128
+- Ícones personalizados nos tamanhos 16, 48 e 128
 - Suporte para Chrome e Firefox (Manifest v2 e v3)
 
 ---
@@ -87,7 +87,7 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 **Via arquivo .xpi:**
 1. Baixe o arquivo `.xpi`
 2. Acesse `about:addons`
-3. Clique no icone de engrenagem
+3. Clique no ícone de engrenagem
 4. Selecione **Instalar complemento a partir de arquivo**
 5. Escolha o arquivo `.xpi` baixado
 
@@ -149,7 +149,7 @@ Para gerar novos releases:
 
 ---
 
-## Creditos
+## Créditos
 
 - Projeto original por [@Superredstone](https://github.com/Superredstone)
 - Tema Dracula por [draculatheme.com](https://draculatheme.com)
@@ -157,6 +157,6 @@ Para gerar novos releases:
 
 ---
 
-## Licenca
+## Licença
 
-Distribuido sob a licenca GPL-2.0. Pode remixar, adaptar e redistribuir - desde que mantenha o codigo aberto.
+Distribuído sob a licença GPL-2.0. Pode remixar, adaptar e redistribuir - desde que mantenha o código aberto.
