@@ -16,6 +16,12 @@ Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/
 
 ---
 
+## Descrição
+
+Extensão para navegador que substitui a página de nova aba por uma interface temática inspirada no universo Dracula. Os motores de busca recebem nomes arcanos e a interface é totalmente localizada em português. Compatível com Chrome e Firefox via Manifest v2 e v3.
+
+---
+
 <div align="center">
 <img src="assets/screenshot.png" width="700" alt="Interface do Codex Dracula">
 </div>
