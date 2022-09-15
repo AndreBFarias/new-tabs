@@ -51,7 +51,14 @@ Extensão para navegador que substitui a página de nova aba por uma interface t
 
 ---
 
-## Instalação Rapida
+## Requisitos
+
+- Google Chrome 88+ / Firefox 57+ ou navegador compatível
+- Nenhuma dependência externa — extensão estática
+
+---
+
+## Instalação Rápida
 
 ### Linux / macOS
 ```bash
