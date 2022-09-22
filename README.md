@@ -1,14 +1,11 @@
-<div align="center">
-
 [![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
 [![Licença](https://img.shields.io/badge/licença-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/new-tabs.svg?style=social)](https://github.com/AndreBFarias/new-tabs/stargazers)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/new-tabs/issues)
 
-<h1>Codex Dracula - New Tabs</h1>
-<img src="assets/dracula.svg" width="120" alt="Logo Codex Dracula">
+# Codex Dracula - New Tabs
 
-</div>
+![Logo Codex Dracula](assets/dracula.svg)
 
 ---
 
@@ -22,9 +19,7 @@ Extensão para navegador que substitui a página de nova aba por uma interface t
 
 ---
 
-<div align="center">
-<img src="assets/screenshot.png" width="700" alt="Interface do Codex Dracula">
-</div>
+![Interface do Codex Dracula](assets/screenshot.png)
 
 ---
 
@@ -44,7 +39,7 @@ Extensão para navegador que substitui a página de nova aba por uma interface t
 
 - Visual reimaginado com tema gótico e referências a tomos mágicos
 - Interface 100% localizada em português
-- Efeitos sonoros ao buscar (sussurros) - agora com opção de ativar/desativar
+- Efeitos sonoros ao buscar (sussurros) — agora com opção de ativar/desativar
 - Imagem do Dracula centralizada com responsividade
 - Ícones personalizados nos tamanhos 16, 48 e 128
 - Suporte para Chrome e Firefox (Manifest v2 e v3)
@@ -78,24 +73,24 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 
 ### Chrome / Chromium / Edge / Brave / Vivaldi
 
-| Arquivo | Descricao |
+| Arquivo | Descrição |
 |---------|-----------|
 | [codex-dracula-chrome-v2.1.zip](releases/chrome/) | Extensão para Chrome (Manifest v3) |
 
 1. Baixe e extraia o arquivo `.zip`
 2. Acesse `chrome://extensions/`
 3. Ative o **Modo do desenvolvedor**
-4. Clique em **Carregar sem compactacao**
-5. Selecione a pasta extraida
+4. Clique em **Carregar sem compactação**
+5. Selecione a pasta extraída
 
 ---
 
 ### Firefox / Waterfox / LibreWolf
 
-| Arquivo | Descricao |
+| Arquivo | Descrição |
 |---------|-----------|
-| [codex-dracula-firefox-v2-v2.1.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) - Maior compatibilidade |
-| [codex-dracula-firefox-v3-v2.1.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versão moderna |
+| [codex-dracula-firefox-v2-v2.1.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) — Maior compatibilidade |
+| [codex-dracula-firefox-v3-v2.1.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) — Versão moderna |
 
 **Via arquivo .xpi:**
 1. Baixe o arquivo `.xpi`
@@ -104,9 +99,9 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 4. Selecione **Instalar complemento a partir de arquivo**
 5. Escolha o arquivo `.xpi` baixado
 
-**Instalação temporaria (desenvolvimento):**
+**Instalação temporária (desenvolvimento):**
 1. Acesse `about:debugging#/runtime/this-firefox`
-2. Clique em **Carregar extensão temporaria**
+2. Clique em **Carregar extensão temporária**
 3. Selecione o `manifest.json` da pasta desejada
 
 ---
@@ -172,4 +167,4 @@ Para gerar novos releases:
 
 ## Licença
 
-Distribuído sob a licença GPL-2.0. Pode remixar, adaptar e redistribuir - desde que mantenha o código aberto.
+Distribuído sob a licença GPL-2.0. Pode remixar, adaptar e redistribuir — desde que mantenha o código aberto.
