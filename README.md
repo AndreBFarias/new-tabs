@@ -1,12 +1,12 @@
 # Codex Dracula - New-tabs (PT-BR)
 
-Uma reinterpretação sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética arcana inspirada em grimórios mágicos, interface em português e um ritual de busca visualmente encantador.
+Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética ~arcana inspirada em grimórios mágicos~ responsiva, interface em português e um ritual de busca visualmente encantador.
 
 ## Preview
 
 ![preview](screenshot.png)
 
-## Buscadores renomeados com estilo
+## Buscadores renomeados
 
 - Olho de Google
 - Oráculo de Yahoo
@@ -16,7 +16,7 @@ Uma reinterpretação sombria da extensão [Dracula New Tab](https://github.com/
 - Espelho Qwant
 - Ecos da Vida (Ecosia)
 
-## O que tem de novo
+## O que tem de novo:
 
 - Visual reimaginado com tema gótico e referências a tomos mágicos
 - Interface 100% localizada em português
