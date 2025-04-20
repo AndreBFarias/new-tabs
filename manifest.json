@@ -1,9 +1,3 @@
-
----
-
-## `manifest.json` :
-
-```json
 {
   "manifest_version": 3,
   "name": "Codex Dracula - new-tabs",
