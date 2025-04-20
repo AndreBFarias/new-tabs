@@ -1,4 +1,4 @@
-# Codex Dracula - Nova Aba (PT-BR)
+# Codex Dracula - New-tabs (PT-BR)
 
 Uma reinterpretação sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética arcana inspirada em grimórios mágicos, interface em português e um ritual de busca visualmente encantador.
 
