@@ -1,19 +1,21 @@
 #### [Chrome](https://www.google.com/chrome)
 
-##### Install using Git
+##### Instalação via Git
 
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
+Se você usa Git, pode instalar e manter o tema atualizado clonando o repositório:
 
 ```bash
-git clone https://github.com/dracula/new-tabs.git
+git clone https://github.com/AndreBFarias/codex-dracula-new-tab.git
 ```
 
-##### Install manually
+### Instalação manual
+Faça o download usando a opção Download .zip do GitHub e extraia os arquivos.
 
-Download using the [GitHub .zip download](https://github.com/dracula/new-tabs/archive/master.zip) option and unzip them.
+### Ativando a extensão
+Acesse [Chrome](chrome://extensions/) ou chrome://extensions/ no seu navegador;
 
-##### Activating theme
+### Ative o Modo do desenvolvedor (canto superior direito);
 
-1. 🔍 Search `chrome://extensions/` in your browser;
-2. Click: "Load unpacked extension";
-3. Select `dracula-new-tab/chrome` folder.
+Clique em “Carregar sem compactação”;
+
+Selecione a pasta codex-dracula-new-tab/chrome/.

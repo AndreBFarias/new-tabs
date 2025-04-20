@@ -1,57 +1,52 @@
-const selectSearchEngine = document.getElementById('select-search-engine')
-const selectedSearchEngine = document.getElementById('selected-search-engine')
-const searchForm = document.getElementById('search-form')
+const selectSearchEngine = document.getElementById('select-search-engine');
+const searchForm = document.getElementById('search-form');
 
+// Define o buscador padrão se ainda não existir
 if (localStorage.getItem('search-engine') == null) {
-  localStorage.setItem('search-engine', 'google')
+  localStorage.setItem('search-engine', 'google');
 }
 
-selectedSearchEngine.innerText = capitalize(
-  localStorage.getItem('search-engine')
-)
+// Aplica visualmente o valor salvo no seletor
+const currentValue = localStorage.getItem('search-engine');
+selectSearchEngine.value = currentValue;
 
+// Atualiza o localStorage ao trocar o seletor
 selectSearchEngine.addEventListener('change', e => {
   localStorage.setItem(
     'search-engine',
     selectSearchEngine.options[selectSearchEngine.selectedIndex].value
-  )
+  );
+  e.preventDefault();
+});
 
-  e.preventDefault()
-})
-
+// Ação de busca + som
 searchForm.addEventListener('submit', e => {
-  const query = searchForm.elements['query'].value
-  const searchEngine = localStorage.getItem('search-engine')
+  e.preventDefault();
 
-  switch (searchEngine) {
-    case 'google':
-      window.location.replace('https://google.com/search?q=' + query)
-      break
-    case 'yahoo':
-      window.location.replace('https://search.yahoo.com/search?p=' + query)
-      break
-    case 'bing':
-      window.location.replace('https://www.bing.com/search?q=' + query)
-      break
-    case 'duckduckgo':
-      window.location.replace('https://duckduckgo.com/?q=' + query)
-      break
-    case 'brave search':
-      window.location.replace('https://search.brave.com/search?q=' + query)
-      break
-    case 'qwant':
-      window.location.replace('https://www.qwant.com/?q=' + query)
-      break
-    case 'ecosia':
-      window.location.replace('https://www.ecosia.org/search?q=' + query)
-      break
-    default:
-      break
-  }
+  const query = searchForm.elements['query'].value;
+  const searchEngine = localStorage.getItem('search-engine');
+  const whisper = new Audio('whisper.mp3');
 
-  e.preventDefault()
-})
+  const searchUrls = {
+    google: 'https://www.google.com/search?q=',
+    yahoo: 'https://search.yahoo.com/search?p=',
+    bing: 'https://www.bing.com/search?q=',
+    'duckduckgo': 'https://duckduckgo.com/?q=',
+    'brave search': 'https://search.brave.com/search?q=',
+    qwant: 'https://www.qwant.com/?q=',
+    ecosia: 'https://www.ecosia.org/search?q='
+  };
 
-function capitalize(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
+  // Verifica se a engine é válida
+  if (!searchUrls[searchEngine]) return;
+
+  // Toca o som e só depois abre nova aba
+  whisper.play().then(() => {
+    whisper.onended = () => {
+      window.open(searchUrls[searchEngine] + encodeURIComponent(query), '_blank');
+    };
+  }).catch(error => {
+    console.warn('Falha ao reproduzir o áudio:', error);
+    window.open(searchUrls[searchEngine] + encodeURIComponent(query), '_blank');
+  });
+});

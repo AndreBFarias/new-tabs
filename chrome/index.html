@@ -1,59 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
-    <title></title>
+    <title>Codex Dracula</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="dracula.svg" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .search-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 10px;
+      }
+
+      img.dracula-img {
+        max-width: 300px;
+        width: 80vw;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+
+      .search-bar {
+        border-radius: 20px;
+        width: 30vw;
+        height: 3rem;
+        padding: 10px 20px;
+        background-color: rgb(248, 248, 242);
+        box-shadow: 10px 10px 20px 2px black;
+        font-size: 1rem;
+      }
+
+      .search-button {
+        border-radius: 20px;
+        height: 3rem;
+        padding: 0 20px;
+        border: 2px solid rgb(189, 147, 249);
+        background-color: rgb(248, 248, 242);
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .search-button:hover {
+        background-color: rgb(189, 147, 249);
+        color: rgb(40, 42, 54);
+      }
+
+      .select-search-engine {
+        display: block;
+        margin: 0 auto 40px auto;
+        background-color: rgb(68, 71, 90);
+        color: rgb(248, 248, 242);
+        border-radius: 10px;
+        padding: 8px;
+        font-size: 0.9rem;
+        width: 250px;
+        max-width: 90vw;
+      }
+
+      .select-search-engine optgroup {
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(189, 147, 249);
+      }
+
+      .select-search-engine option {
+        color: rgb(248, 248, 242);
+        background-color: rgb(40, 42, 54);
+        padding: 4px 8px;
+      }
+
+      .footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    </style>
   </head>
   <body>
-    <div class="title text">
-      <h1>Dracula search!</h1>
-      <br />
-      <h3 class="subtitle">
-        Powered by
-        <select id="select-search-engine" class="select-search-engine">
-          <option
-            value=""
-            id="selected-search-engine"
-            selected="selected"
-            hidden
-          ></option>
-          <optgroup label="Get spied">
-            <option value="google">Google</option>
-            <option value="yahoo">Yahoo</option>
-            <option value="bing">Bing</option>
-          </optgroup>
-          <optgroup label="Get not spied">
-            <option value="duckduckgo">Duckduckgo</option>
-            <option value="brave search">Brave search</option>
-            <option value="qwant">Qwant</option>
-          </optgroup>
-          <optgroup label="Be a good person">
-            <option value="ecosia">Ecosia</option>
-          </optgroup>
-        </select>
-      </h3>
+    <div class="title text" style="text-align: center;">
+      <h1>Codex Dracula</h1>
+      <h3 class="subtitle">Feitiço de busca conjurado por: </h3>
     </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+      <img src="dracula.svg" alt="Símbolo Dracula" class="dracula-img" />
+      <select id="select-search-engine" class="select-search-engine">
+        <optgroup label="Espiados pelo Beholder">
+          <option value="google">Olhos de Google</option>
+          <option value="yahoo">Oráculo do Yahoo</option>
+          <option value="bing">Sussurros do Bing</option>
+        </optgroup>
+        <optgroup label="Sombras sem vigia">
+          <option value="duckduckgo">Pato das Trevas</option>
+          <option value="brave search">Caçador Valente</option>
+          <option value="qwant">Espelho de Qwant</option>
+        </optgroup>
+        <optgroup label="Guardião da Floresta">
+          <option value="ecosia">Ecos da Vida</option>
+        </optgroup>
+      </select>
+    </div>
+
     <div class="main-container">
-      <form id="search-form">
-        <input
-          class="search-bar"
-          id="search-bar"
-          type="text"
-          placeholder="Search..."
-          name="query"
-          autocomplete="off"
-        />
-        <button id="search-button" class="search-button" type="submit">
-          Go
-        </button>
+      <form id="search-form" class="search-container">
+        <div class="search-row">
+          <input
+            class="search-bar"
+            id="search-bar"
+            type="text"
+            placeholder="Sussurre sua busca..."
+            name="query"
+            autocomplete="on"
+          />
+          <button id="search-button" class="search-button" type="submit">
+            Invocar!
+          </button>
+        </div>
       </form>
     </div>
+
     <div class="footer">
       <p class="text">
-        Created with love by
-        <a href="https://github.com/Superredstone">Superredstone</a>
+        Forjado nos confins da noite por
+        <a href="https://github.com/Superredstone">Superredstone</a> e revisitado por <a href="https://github.com/AndreBFarias">AndreBFarias</a>
       </p>
     </div>
 

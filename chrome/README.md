@@ -1,34 +1,50 @@
-# Dracula-new-tab
+# Codex Dracula - New Tab (PT-BR)
 
-A minimal new tab extension for chromium based browsers
+Uma reinterpretação sombria e mística da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com foco em experiência visual, idioma português e uma interface inspirada em tomos arcanos e feitiços de busca.
 
-# Preview
+---
+
+##  Preview
 
 <img src="screenshot.png"/>
 
-# Search engine support
+---
 
-Currently are supported this search engines:
+##  Buscadores suportados
 
-- Google
-- Yahoo
-- Bing
-- Duckduckgo
-- Brave search
-- Qwant
-- Ecosia
+- Olho de Google
+- Oráculo de Yahoo
+- Sussurros de Bing
+- Pato das Trevas (Duckduckgo)
+- Caçador Valente (Brave search)
+- Espelho Qwant
+- Ecos da Vida (Ecosia)
 
-Feel free to open a pull request if you want your favourite searche engine in this project!
+---
 
-# How to install
+## O que mudou?
 
-1. Clone the repository with `git clone https://github.com/Superredstone/Dracula-new-tab.git`
-2. Search `chrome://extensions/` in your browser
-3. Click "Load unpacked extension"
-4. Select dracula-new-tab/chrome/ folder
+- Visual totalmente reimaginado, baseado em **Codex Dracula**.
+- Interface em **português brasileiro**, com nomes estilizados dos buscadores.
+- **Campo de busca centralizado e responsivo**, com botão de invocação.
+- **Áudio de sussurro** que toca antes de redirecionar para a busca.
+- Suporte total a navegadores **baseados em Chromium** (Chrome, Edge, Brave, etc).
 
-# Special thanks
+---
 
-- [Dracula theme](https://draculatheme.com/)
+##  Como instalar
 
-# License GPL-2.0
+1. Clone o repositório com:
+
+
+```bash
+git clone https://github.com/AndreBFarias/codex-dracula-new-tab.git
+
+```
+
+
+2. Abra o navegador e acesse chrome://extensions/ 
+3. Ative o Modo do Desenvolvedor (canto superior direito)
+4. Clique em “Carregar sem compactação”
+5. Selecione a pasta chrome/ do projeto
+

@@ -1,12 +1,23 @@
+
+---
+
+## `manifest.json` :
+
+```json
 {
   "manifest_version": 3,
-  "name": "Dracula new tab",
-  "version": "1.1",
-  "description": "New page in dracula style!",
-  "author": "Superredstone",
+  "name": "Codex Dracula - new-tabs",
+  "version": "2.0",
+  "description": "Uma nova aba inspirada no tema Dracula com visual arcano e suporte em português.",
+  "author": "Original por Superredstone, revisitado por AndreBFarias",
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
   "permissions": ["storage"],
-  "icons": {}
+  "icons": {
+	  "16": "icon_16x16.png",
+	  "48": "icon_48x48.png",
+	  "128": "icon_128x128.png"
+	}
+
 }
