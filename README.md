@@ -1,16 +1,12 @@
-# Codex Dracula - New Tab (PT-BR)
+# Codex Dracula - Nova Aba (PT-BR)
 
-Uma reinterpretação sombria e mística da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com foco em experiência visual, idioma português e uma interface inspirada em tomos arcanos e feitiços de busca.
+Uma reinterpretação sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética arcana inspirada em grimórios mágicos, interface em português e um ritual de busca visualmente encantador.
 
----
+## Preview
 
-##  Preview
+![preview](screenshot.png)
 
-<img src="screenshot.png"/>
-
----
-
-##  Buscadores suportados
+## Buscadores renomeados com estilo
 
 - Olho de Google
 - Oráculo de Yahoo
@@ -20,31 +16,37 @@ Uma reinterpretação sombria e mística da extensão [Dracula New Tab](https://
 - Espelho Qwant
 - Ecos da Vida (Ecosia)
 
----
+## O que tem de novo
 
-## O que mudou?
+- Visual reimaginado com tema gótico e referências a tomos mágicos
+- Interface 100% localizada em português
+- Efeitos sonoros ao buscar (sussurros)
+- Imagem do Drácula centralizada com responsividade
+- Ícones personalizados nos tamanhos 16, 48 e 128 para a extensão
+- Código completamente movido para a raiz do repositório (sem pasta `/chrome`)
 
-- Visual totalmente reimaginado, baseado em **Codex Dracula**.
-- Interface em **português brasileiro**, com nomes estilizados dos buscadores.
-- **Campo de busca centralizado e responsivo**, com botão de invocação.
-- **Áudio de sussurro** que toca antes de redirecionar para a busca.
-- Suporte total a navegadores **baseados em Chromium** (Chrome, Edge, Brave, etc).
+## Instalação no Chrome (ou navegadores Chromium)
 
----
-
-##  Como instalar
-
-1. Clone o repositório com:
-
+### Via Git
 
 ```bash
-git clone https://github.com/AndreBFarias/codex-dracula-new-tab.git
-
+git clone https://github.com/AndreBFarias/new-tabs.git
 ```
 
+## Manual
+- Baixe o repositório via Download ZIP
+- Extraia os arquivos
+- Acesse: chrome://extensions/
+- Ative o Modo do desenvolvedor
+- Clique em “Carregar sem compactação”
+- Selecione a pasta extraída
 
-2. Abra o navegador e acesse chrome://extensions/ 
-3. Ative o Modo do Desenvolvedor (canto superior direito)
-4. Clique em “Carregar sem compactação”
-5. Selecione a pasta chrome/ do projeto
+# Créditos
+Projeto original por @Superredstone
 
+Tema Dracula por https://draculatheme.com
+
+Versão Codex Dracula por @AndreBFarias
+
+# Licença
+Distribuído sob a licença GPL-2.0. Pode remixar, adaptar e redistribuir — desde que mantenha o código aberto.
