@@ -1,52 +1,162 @@
-# Codex Dracula - New-tabs (PT-BR)
+<div align="center">
 
-Uma releitura sombria da extensão [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estética ~arcana inspirada em grimórios mágicos~ responsiva, interface em português e um ritual de busca visualmente encantador.
+[![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
+[![Licenca](https://img.shields.io/badge/licenca-GPLv2-blue.svg)](https://www.gnu.org/licenses/gpl-2.0)
+[![Estrelas](https://img.shields.io/github/stars/AndreBFarias/new-tabs.svg?style=social)](https://github.com/AndreBFarias/new-tabs/stargazers)
+[![Contribuicoes](https://img.shields.io/badge/contribuicoes-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/new-tabs/issues)
 
-## Preview
+<h1>Codex Dracula - New Tabs</h1>
+<img src="assets/dracula.svg" width="120" alt="Logo Codex Dracula">
 
-![preview](screenshot.png)
+</div>
+
+---
+
+Uma releitura sombria da extensao [Dracula New Tab](https://github.com/dracula/new-tabs), com uma estetica arcana inspirada em grimorios magicos, interface em portugues e um ritual de busca visualmente encantador.
+
+---
+
+<div align="center">
+<img src="assets/screenshot.png" width="700" alt="Interface do Codex Dracula">
+</div>
+
+---
 
 ## Buscadores renomeados
 
-- Olho de Google
-- Oráculo de Yahoo
-- Sussurros de Bing
-- Pato das Trevas (Duckduckgo)
-- Caçador Valente (Brave search)
-- Espelho Qwant
-- Ecos da Vida (Ecosia)
+| Motor Original | Nome Arcano |
+|----------------|-------------|
+| Google | Olhos de Google |
+| Yahoo | Oraculo do Yahoo |
+| Bing | Sussurros do Bing |
+| DuckDuckGo | Pato das Trevas |
+| Brave Search | Cacador Valente |
+| Qwant | Espelho de Qwant |
+| Ecosia | Ecos da Vida |
 
-## O que tem de novo:
+## Novidades desta versao
 
-- Visual reimaginado com tema gótico e referências a tomos mágicos
-- Interface 100% localizada em português
+- Visual reimaginado com tema gotico e referencias a tomos magicos
+- Interface 100% localizada em portugues
 - Efeitos sonoros ao buscar (sussurros)
-- Imagem do Drácula centralizada com responsividade
-- Ícones personalizados nos tamanhos 16, 48 e 128 para a extensão
-- Código completamente movido para a raiz do repositório (sem pasta `/chrome`)
+- Imagem do Dracula centralizada com responsividade
+- Icones personalizados nos tamanhos 16, 48 e 128
+- Suporte para Chrome e Firefox (Manifest v2 e v3)
 
-## Instalação no Chrome (ou navegadores Chromium)
+---
 
-### Via Git
+## Instalacao Rapida
 
+### Linux / macOS
 ```bash
-git clone https://github.com/AndreBFarias/new-tabs.git
+./install.sh
 ```
 
-## Manual
-- Baixe o repositório via Download ZIP
-- Extraia os arquivos
-- Acesse: chrome://extensions/
-- Ative o Modo do desenvolvedor
-- Clique em “Carregar sem compactação”
-- Selecione a pasta extraída
+### Windows
+```cmd
+install.bat
+```
 
-# Créditos
-Projeto original por @Superredstone
+Os instaladores apresentam um menu interativo para selecionar o navegador.
 
-Tema Dracula por https://draculatheme.com
+---
 
-Versão Codex Dracula por @AndreBFarias
+## Instalacao Manual
 
-# Licença
-Distribuído sob a licença GPL-2.0. Pode remixar, adaptar e redistribuir — desde que mantenha o código aberto.
+### Chrome / Chromium / Edge / Brave / Vivaldi
+
+| Arquivo | Descricao |
+|---------|-----------|
+| [codex-dracula-chrome-v2.0.zip](releases/chrome/) | Extensao para Chrome (Manifest v3) |
+
+1. Baixe e extraia o arquivo `.zip`
+2. Acesse `chrome://extensions/`
+3. Ative o **Modo do desenvolvedor**
+4. Clique em **Carregar sem compactacao**
+5. Selecione a pasta extraida
+
+---
+
+### Firefox / Waterfox / LibreWolf
+
+| Arquivo | Descricao |
+|---------|-----------|
+| [codex-dracula-firefox-v2-v2.0.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) - Maior compatibilidade |
+| [codex-dracula-firefox-v3-v2.0.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versao moderna |
+
+**Via arquivo .xpi:**
+1. Baixe o arquivo `.xpi`
+2. Acesse `about:addons`
+3. Clique no icone de engrenagem
+4. Selecione **Instalar complemento a partir de arquivo**
+5. Escolha o arquivo `.xpi` baixado
+
+**Instalacao temporaria (desenvolvimento):**
+1. Acesse `about:debugging#/runtime/this-firefox`
+2. Clique em **Carregar extensao temporaria**
+3. Selecione o `manifest.json` da pasta desejada
+
+---
+
+## Compatibilidade
+
+| Navegador | Versao | Status |
+|-----------|--------|--------|
+| Chrome | 88+ | Manifest v3 |
+| Chromium | 88+ | Manifest v3 |
+| Microsoft Edge | 88+ | Manifest v3 |
+| Brave | 1.19+ | Manifest v3 |
+| Vivaldi | 3.6+ | Manifest v3 |
+| Opera | 74+ | Manifest v3 |
+| Arc | Todas | Manifest v3 |
+| Firefox | 57-108 | Manifest v2 |
+| Firefox | 109+ | Manifest v2 ou v3 |
+| Waterfox | G3+ | Manifest v2 |
+| LibreWolf | Todas | Manifest v2 |
+| Floorp | Todas | Manifest v2 |
+
+---
+
+## Estrutura do Projeto
+
+```
+new-tabs/
+├── assets/              # Imagens e recursos
+├── chrome/              # Extensao Chrome (Manifest v3)
+├── firefox/             # Extensao Firefox (Manifest v2)
+├── firefox-v3/          # Extensao Firefox (Manifest v3)
+├── releases/
+│   ├── chrome/          # .zip para Chrome
+│   ├── firefox/         # .zip e .xpi (v2)
+│   └── firefox-v3/      # .zip e .xpi (v3)
+├── build.sh             # Build script (Linux/macOS)
+├── install.sh           # Instalador (Linux/macOS)
+├── install.bat          # Instalador (Windows)
+├── README.md
+├── INSTALL.md
+└── LICENSE
+```
+
+---
+
+## Build
+
+Para gerar novos releases:
+
+```bash
+./build.sh
+```
+
+---
+
+## Creditos
+
+- Projeto original por [@Superredstone](https://github.com/Superredstone)
+- Tema Dracula por [draculatheme.com](https://draculatheme.com)
+- Versao Codex Dracula por [@AndreBFarias](https://github.com/AndreBFarias)
+
+---
+
+## Licenca
+
+Distribuido sob a licenca GPL-2.0. Pode remixar, adaptar e redistribuir - desde que mantenha o codigo aberto.

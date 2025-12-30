@@ -1,1 +1,34 @@
-dracula-new-tab-firefox.zip
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Chaves privadas
+*.pem
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporarios
+*.tmp
+*.temp
+*.log
+
+# Projeto original (referencia)
+projeto_original/
+
+# Releases antigos
+releases/installer.zip
