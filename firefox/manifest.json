@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Codex Dracula - new-tabs",
-  "version": "2.0",
+  "version": "2.1",
   "description": "Uma nova aba inspirada no tema Dracula com visual arcano e suporte em português.",
   "author": "Original por Superredstone, revisitado por AndreBFarias",
   "browser_specific_settings": {

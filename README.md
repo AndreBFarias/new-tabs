@@ -38,7 +38,7 @@ Uma releitura sombria da extensao [Dracula New Tab](https://github.com/dracula/n
 
 - Visual reimaginado com tema gotico e referencias a tomos magicos
 - Interface 100% localizada em portugues
-- Efeitos sonoros ao buscar (sussurros)
+- Efeitos sonoros ao buscar (sussurros) - agora com opcao de ativar/desativar
 - Imagem do Dracula centralizada com responsividade
 - Icones personalizados nos tamanhos 16, 48 e 128
 - Suporte para Chrome e Firefox (Manifest v2 e v3)
@@ -67,7 +67,7 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 
 | Arquivo | Descricao |
 |---------|-----------|
-| [codex-dracula-chrome-v2.0.zip](releases/chrome/) | Extensao para Chrome (Manifest v3) |
+| [codex-dracula-chrome-v2.1.zip](releases/chrome/) | Extensao para Chrome (Manifest v3) |
 
 1. Baixe e extraia o arquivo `.zip`
 2. Acesse `chrome://extensions/`
@@ -81,8 +81,8 @@ Os instaladores apresentam um menu interativo para selecionar o navegador.
 
 | Arquivo | Descricao |
 |---------|-----------|
-| [codex-dracula-firefox-v2-v2.0.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) - Maior compatibilidade |
-| [codex-dracula-firefox-v3-v2.0.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versao moderna |
+| [codex-dracula-firefox-v2-v2.1.xpi](releases/firefox/) | Firefox 57+ (Manifest v2) - Maior compatibilidade |
+| [codex-dracula-firefox-v3-v2.1.xpi](releases/firefox-v3/) | Firefox 109+ (Manifest v3) - Versao moderna |
 
 **Via arquivo .xpi:**
 1. Baixe o arquivo `.xpi`

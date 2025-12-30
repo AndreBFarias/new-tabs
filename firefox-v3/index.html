@@ -92,6 +92,33 @@
         text-align: center;
         font-size: 0.9rem;
       }
+
+      .sound-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 15px;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .sound-toggle input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        accent-color: rgb(189, 147, 249);
+        cursor: pointer;
+      }
+
+      .toggle-label {
+        color: rgb(98, 114, 164);
+        font-size: 0.85rem;
+        transition: color 0.2s ease;
+      }
+
+      .sound-toggle:hover .toggle-label {
+        color: rgb(189, 147, 249);
+      }
     </style>
   </head>
   <body>
@@ -117,6 +144,10 @@
           <option value="ecosia">Ecos da Vida</option>
         </optgroup>
       </select>
+      <label class="sound-toggle">
+        <input type="checkbox" id="sound-enabled" checked />
+        <span class="toggle-label">Sussurros arcanos</span>
+      </label>
     </div>
 
     <div class="main-container">

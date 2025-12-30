@@ -1,16 +1,21 @@
 const selectSearchEngine = document.getElementById('select-search-engine');
 const searchForm = document.getElementById('search-form');
+const soundToggle = document.getElementById('sound-enabled');
 
-// Define o buscador padrão se ainda não existir
 if (localStorage.getItem('search-engine') == null) {
   localStorage.setItem('search-engine', 'google');
 }
 
-// Aplica visualmente o valor salvo no seletor
+if (localStorage.getItem('sound-enabled') == null) {
+  localStorage.setItem('sound-enabled', 'true');
+}
+
 const currentValue = localStorage.getItem('search-engine');
 selectSearchEngine.value = currentValue;
 
-// Atualiza o localStorage ao trocar o seletor
+const soundEnabled = localStorage.getItem('sound-enabled') === 'true';
+soundToggle.checked = soundEnabled;
+
 selectSearchEngine.addEventListener('change', e => {
   localStorage.setItem(
     'search-engine',
@@ -19,13 +24,16 @@ selectSearchEngine.addEventListener('change', e => {
   e.preventDefault();
 });
 
-// Ação de busca + som
+soundToggle.addEventListener('change', () => {
+  localStorage.setItem('sound-enabled', soundToggle.checked.toString());
+});
+
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
 
   const query = searchForm.elements['query'].value;
   const searchEngine = localStorage.getItem('search-engine');
-  const whisper = new Audio('whisper.mp3');
+  const isSoundEnabled = localStorage.getItem('sound-enabled') === 'true';
 
   const searchUrls = {
     google: 'https://www.google.com/search?q=',
@@ -37,16 +45,20 @@ searchForm.addEventListener('submit', e => {
     ecosia: 'https://www.ecosia.org/search?q='
   };
 
-  // Verifica se a engine é válida
   if (!searchUrls[searchEngine]) return;
 
-  // Toca o som e só depois abre nova aba
-  whisper.play().then(() => {
-    whisper.onended = () => {
-      window.open(searchUrls[searchEngine] + encodeURIComponent(query), '_blank');
-    };
-  }).catch(error => {
-    console.warn('Falha ao reproduzir o áudio:', error);
-    window.open(searchUrls[searchEngine] + encodeURIComponent(query), '_blank');
-  });
+  const targetUrl = searchUrls[searchEngine] + encodeURIComponent(query);
+
+  if (isSoundEnabled) {
+    const whisper = new Audio('whisper.mp3');
+    whisper.play().then(() => {
+      whisper.onended = () => {
+        window.open(targetUrl, '_blank');
+      };
+    }).catch(() => {
+      window.open(targetUrl, '_blank');
+    });
+  } else {
+    window.open(targetUrl, '_blank');
+  }
 });
