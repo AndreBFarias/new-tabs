@@ -34,9 +34,9 @@ O instalador apresenta um menu interativo:
 
 **Via Git:**
 ```bash
-git clone https://github.com/AndreBFarias/new-tabs.git
+git clone https://github.com/AndreBFarias/ArcaneTab.git
 ```
-Depois carregue a pasta `new-tabs/chrome/` no navegador.
+Depois carregue a pasta `ArcaneTab/chrome/` no navegador.
 
 ---
 
@@ -131,12 +131,12 @@ Apos instalar, abra uma nova aba. Voce vera:
 
 ### Chrome
 1. Acesse `chrome://extensions/`
-2. Encontre "Codex Dracula - new-tabs"
+2. Encontre "Codex Dracula - ArcaneTab"
 3. Clique em **Remover**
 
 ### Firefox
 1. Acesse `about:addons`
-2. Encontre "Codex Dracula - new-tabs"
+2. Encontre "Codex Dracula - ArcaneTab"
 3. Clique nos tres pontos e selecione **Remover**
 
 ### Linux (instalacao via script)
