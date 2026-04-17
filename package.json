@@ -1,0 +1,24 @@
+{
+  "name": "arcanetab",
+  "version": "2.2.0",
+  "description": "Nova aba inspirada no tema Dracula com visual arcano",
+  "author": "Andre Farias <andre.dsbf@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndreBFarias/ArcaneTab"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreBFarias/ArcaneTab/issues"
+  },
+  "scripts": {
+    "test": "node --test tests/",
+    "lint": "npx eslint firefox/script.js firefox-v3/script.js chrome/script.js",
+    "validate:manifest:firefox": "node tests/validate-manifest.js firefox",
+    "validate:manifest:firefox-v3": "node tests/validate-manifest.js firefox-v3",
+    "validate:manifest:chrome": "node tests/validate-manifest.js chrome"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
